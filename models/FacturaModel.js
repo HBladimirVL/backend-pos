@@ -4,8 +4,9 @@ import db from "../database/db.js";
 import { DataTypes } from "sequelize";
 
 const FacturaModel = db.define("factura", {
-  fecha: { type: DataTypes.STRING },
-  content: { type: DataTypes.STRING },
+  fecha: { type: DataTypes.DATE },
+  monto: { type: DataTypes.REAL },
+  cliente: { type: DataTypes.STRING },
 });
 
 export default FacturaModel;
