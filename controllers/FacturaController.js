@@ -4,7 +4,7 @@ import FacturaModel from "../models/FacturaModel.js";
 //** Métodos para el CRUD **/
 
 //Mostrar todos los registros
-export const getAllFacturas = async (req, res) => {
+export const getAllFactura = async (req, res) => {
     try {
         const factura = await FacturaModel.findAll()
         res.json(factura)

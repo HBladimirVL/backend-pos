@@ -1,6 +1,6 @@
 import express from "express";
 import {
-  getAllFacturas,
+  getAllFactura,
   getFactura,
   createFactura,
   updateFactura,
@@ -8,7 +8,7 @@ import {
 } from "../controllers/FacturaController.js";
 const router = express.Router();
 
-router.get("/", getAllFacturas);
+router.get("/", getAllFactura);
 router.get("/:id", getFactura);
 router.post("/", createFactura);
 router.put("/:id", updateFactura);
